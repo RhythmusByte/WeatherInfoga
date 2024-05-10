@@ -1,0 +1,85 @@
+:root {
+  --light: #F8F9FA;
+  --dark: #212529;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  padding: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: var(--light);
+  font-weight: bold;
+  background-color: var(--dark);
+}
+
+#city {
+  font-size: 1.2rem;
+  margin: 25px 10px;
+  background-color: hsla(0, 0%, 0%, 0.9);
+  color: hsl(0, 0%, 90%);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(76, 75, 75, 0.7);
+}
+
+button[type="submit"] {
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(76, 75, 75, 0.7);
+  background-color: hsla(0, 0%, 0%, 0.9);
+  color: hsl(0, 0%, 90%);
+  padding: 8px;
+  margin: 10px 10px;
+}
+
+.card {
+  background: rgba( 255, 255, 255, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cityDisplay {
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 2em;
+}
+
+.temDisplay {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+
+.humidityDisplay,
+.descDisplay,
+.feelsDisplay,
+.min, 
+.max {
+  font-size: 1.2em;
+}
+
+.emojiDisplay {
+  font-size: 3rem;
+  margin: 5px auto;
+}
+
+.errorDisplay {
+  margin: 10px auto;
+  color: hsl(0, 100%, 50%);
+  padding: 10px ;
+}
