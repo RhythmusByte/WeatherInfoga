@@ -1,13 +1,13 @@
 # Weather App
 
-[![GitHub license](https://img.shields.io/github/license/RhythmusByte/Weather-App)](https://github.com/RhythmusByte/Weather-App/blob/main/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/RhythmusByte/Weather-App)](https://github.com/RhythmusByte/Weather-App/issues)
+[![GitHub license](https://img.shields.io/github/license/RhythmusByte/WeatherInfoga)](https://github.com/RhythmusByte/WeatherInfoga/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/RhythmusByte/WeatherInfoga)](https://github.com/RhythmusByte/WeatherInfoga/issues)
 
 This is a simple weather app that allows users to check the weather conditions of any city around the world.
 
 ## Live Demo
 
-You can try the live demo of the Weather App [here](https://rhythmusbyte.github.io/Weather-App).
+You can try the live demo of the WeatherInfoga [here](https://weatherinfoga.vercel.app/) or from [here](https://rhythmusbyte.github.io/WeatherInfoga).
 
 ## Features
 
@@ -29,8 +29,8 @@ You can try the live demo of the Weather App [here](https://rhythmusbyte.github.
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/RhythmusByte/Weather-App/blob/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/RhythmusByte/WeatherInfoga/blob/main/LICENSE).
 
 ## Contributing
 
-Contributions are welcome! Feel free to contribute to the project. If you encounter any issues or have suggestions for improvements, please [create an issue](https://github.com/RhythmusByte/Weather-App/issues) on GitHub.
+Contributions are welcome! Feel free to contribute to the project. If you encounter any issues or have suggestions for improvements, please [create an issue](https://github.com/RhythmusByte/WeatherInfoga/issues) on GitHub.
