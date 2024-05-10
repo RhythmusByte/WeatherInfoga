@@ -25,6 +25,7 @@ You can try the live demo of the Weather App [here](https://rhythmusbyte.github.
 
 - [RhythmusByte](https://github.com/RhythmusByte)
 - [Sanooj Kavungal](https://github.com/sanoojkavungal)
+- [Afna Sheri A](https://github.com/af-na)
 
 ## License
 
