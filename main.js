@@ -1,27 +1,38 @@
+// Selecting form, city input, and card elements
 const form = document.querySelector('.form');
 const cityInput = document.getElementById('city');
 const card = document.querySelector('.card');
-const apiKey = "a49b072fb4f49f7e4c27d85edf0bb9ff";
 
+// OpenWeatherMap API key
+const apiKey = "a44475fa2f02a503bc6e835ba3e6c751";
+
+// Event listener for form submission
 form.addEventListener("submit", async event => {
   event.preventDefault();
 
+  // Get the value of the city input
   const city = cityInput.value;
+  // Check if a city is entered
   if(city){
     try {
+      // Get weather data for the entered city
       const weatherData = await getWeatherData(city);
+      // Display weather details
       displayDetails(weatherData);
     }
     catch(error) {
+      // Log and display error messages
       console.error(error);
       errorDisplay(error);
     }
   }
   else {
+    // Display error message if no city is entered
     errorDisplay("Please Enter a Proper City Name");
   }
 });
 
+// Function to fetch weather data from OpenWeatherMap API
 async function getWeatherData(city) {
   const apiurl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
@@ -31,17 +42,20 @@ async function getWeatherData(city) {
   }
 
   return await response.json();
-  }
+}
 
+// Function to display weather details on the card
 function displayDetails(data) {
-  console.log(data);
+  // Destructure relevant weather data from the response
   const {name: city,
     main: {temp, humidity, feels_like, temp_max, temp_min},
     weather: [{description, id}]} = data;
 
+    // Clear previous content and set card display to flex
     card.textContent = '';
     card.style.display = 'flex';
 
+    // Create elements for displaying weather details
     const cityDisplay = document.createElement('h1');
     const tempDisplay = document.createElement('p');
     const humidityDisplay = document.createElement('p');
@@ -51,7 +65,7 @@ function displayDetails(data) {
     const descDisplay = document.createElement('p');
     const emojiDisplay = document.createElement('p');
 
-
+    // Add classes to created elements
     cityDisplay.classList.add('cityDisplay');
     tempDisplay.classList.add('tempDisplay');
     humidityDisplay.classList.add('humidityDisplay');
@@ -61,6 +75,7 @@ function displayDetails(data) {
     descDisplay.classList.add('descDisplay');
     emojiDisplay.classList.add('emojiDisplay');
 
+    // Set text content for each element
     cityDisplay.textContent = city;
     tempDisplay.textContent = `${(temp).toFixed(1)}° C`;
     humidityDisplay.textContent = `Humidity: ${humidity}`;
@@ -71,6 +86,7 @@ function displayDetails(data) {
     descDisplay.textContent = `${description}`.toUpperCase();
     emojiDisplay.textContent = displayEmoji(id);
 
+    // Append elements to the card
     card.appendChild(cityDisplay);
     card.appendChild(tempDisplay);
     card.appendChild(humidityDisplay);
@@ -79,9 +95,9 @@ function displayDetails(data) {
     card.appendChild(maxDisplay);
     card.appendChild(descDisplay);
     card.appendChild(emojiDisplay);
-
 }
 
+// Function to display emoji based on weather condition
 function displayEmoji(id) {
   switch(true) {
     case (id >= 200 && id < 300):
@@ -103,13 +119,16 @@ function displayEmoji(id) {
   }
 }
 
+// Function to display error messages
 function errorDisplay(message) {
   const errorDisplay = document.createElement("p");
   errorDisplay.textContent = message;
   errorDisplay.classList.add('errorDisplay');
 
+  // Clear previous content and set card display to flex
   card.textContent = "";
   card.style.display = "flex";
 
+  // Append error message to the card
   card.appendChild(errorDisplay);
 }

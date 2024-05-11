@@ -3,20 +3,50 @@
   --dark: #212529;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 body {
+  margin: 0;
   padding: 0;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   color: var(--light);
   font-weight: bold;
   background-color: var(--dark);
+}
+
+/* Header Starts Here */
+
+header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: hsla(0, 0%, 0%, 0.447);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0.5px 5px hsla(0, 2%, 78%, 0.5);
+}
+
+header h3 {
+  margin-left: 8px;
+  margin-right: 8px;
+  color: var(--light);
+}
+
+header h3:hover {
+  transform: scale(1.02);
+}
+
+header a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+/* Header Ends Here */
+
+.main {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #city {
@@ -33,11 +63,16 @@ button[type="submit"] {
   font-size: 1em;
   border-radius: 5px;
   border: none;
-  box-shadow: 2px 2px 5px rgba(76, 75, 75, 0.7);
+  box-shadow: 0 2px 5px hsla(0, 1%, 45%, 0.7);
   background-color: hsla(0, 0%, 0%, 0.9);
   color: hsl(0, 0%, 90%);
   padding: 8px;
   margin: 10px 10px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+button[type="submit"]:hover {
+  transform: scale(1.02);
 }
 
 .card {
