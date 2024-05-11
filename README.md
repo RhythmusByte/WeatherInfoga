@@ -1,7 +1,7 @@
 # 🌦️ Weather App ☔
 
-[![GitHub license](https://img.shields.io/github/license/RhythmusByte/WeatherInfoga)](https://github.com/RhythmusByte/WeatherInfoga/blob/main/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/RhythmusByte/WeatherInfoga)](https://github.com/RhythmusByte/WeatherInfoga/issues)
+![GitHub License](https://img.shields.io/github/license/rhythmusbyte/weatherinfoga?style=flat&logo=github&logoColor=%23fff&labelColor=%23000&color=%23888dgs&link=https%3A%2F%2Fgithub.com%2FRhythmusByte%2FWeatherInfoga%2Fblob%2Fmain%2FLICENSE)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/rhythmusbyte/weatherinfoga?style=flat&logo=github&logoColor=white&labelColor=%23000&color=rgb(255%2C0%2C0)&link=https%3A%2F%2Fgithub.com%2FRhythmusByte%2FWeatherInfoga%2Fissues)
 
 This is a simple weather app that allows users to check the weather conditions of any city around the world.
 
