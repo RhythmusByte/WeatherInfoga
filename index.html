@@ -15,13 +15,24 @@
 </head>
 <body>
 
-  <form class="form">
-    <input type="text" id="city" placeholder="Enter a city">
-    <button type="submit">Get Weather</button>
-  </form>
+  <header>
+    <h3>WeatherInfoga</h3>
+    <h3><a href="">Source Code</a></h3>
+  </header>
 
-  <div class="card" style="display: none;"></div>
-  
+  <main>
+    <div class="main">
+      <!-- Form for entering city name and button to get weather -->
+      <form class="form">
+        <input type="text" id="city" placeholder="Enter a city name">
+        <button type="submit">Get Weather</button>
+      </form>
+
+      <!-- Container for displaying weather details -->
+      <div class="card" style="display: none;"></div>
+    </div>
+  </main>
+    
   <script src="main.js"></script>
 </body>
 </html>
