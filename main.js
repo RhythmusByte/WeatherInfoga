@@ -78,7 +78,7 @@ function displayDetails(data) {
     // Set text content for each element
     cityDisplay.textContent = city;
     tempDisplay.textContent = `${(temp).toFixed(1)}° C`;
-    humidityDisplay.textContent = `Humidity: ${humidity}`;
+    humidityDisplay.textContent = `Humidity: ${humidity}%`;
     feelsDisplay.textContent = `Feels Like: ${(feels_like).toFixed(1)}° C`
     minDisplay.textContent = `Min: ${(temp_min).toFixed(1)}° C`
     maxDisplay.textContent = `Max: ${(temp_max).toFixed(1)}° C`
