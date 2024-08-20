@@ -79,10 +79,9 @@ function displayDetails(data) {
     cityDisplay.textContent = city;
     tempDisplay.textContent = `${(temp).toFixed(1)}° C`;
     humidityDisplay.textContent = `Humidity: ${humidity}`;
-    feelsDisplay.textContent = `Feels Like: ${feels_like}`
+    feelsDisplay.textContent = `Feels Like: ${(feels_like).toFixed(1)}° C`
     minDisplay.textContent = `Min: ${(temp_min).toFixed(1)}° C`
     maxDisplay.textContent = `Max: ${(temp_max).toFixed(1)}° C`
-    feelsDisplay.textContent = `Feels Like ${feels_like}`
     descDisplay.textContent = `${description}`.toUpperCase();
     emojiDisplay.textContent = displayEmoji(id);
 
