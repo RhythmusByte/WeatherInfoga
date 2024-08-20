@@ -101,6 +101,7 @@ button[type="submit"]:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 35px;
 }
 
 .cityDisplay {
