@@ -31,7 +31,7 @@ header {
     width: 100%;
     background-color: hsla(0, 0%, 0%, 0.447);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     box-shadow: 0 0.5px 5px hsla(0, 2%, 78%, 0.5);
 }
 
